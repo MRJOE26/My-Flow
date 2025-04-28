@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ht">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Myflow - Dashboard</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>Myflow</header>
+
+<div class="container">
+  <img src="https://images.unsplash.com/photo-1607746882042-944635dfe10e?crop=faces&fit=crop&w=500&h=500" alt="Happy User" class="profile-img">
+  
+  <div class="card" id="dashboard">
+    <div class="info">Bonjou, <span id="username">Itilizatè</span>!</div>
+    <div class="info">Balans ou: <strong><span id="balance">0</span> HTG</strong></div>
+
+    <button class="btn" onclick="recharge()">Recharge Lajan</button>
+    <button class="btn" onclick="withdraw()">Retire Lajan</button>
+    <button class="btn" onclick="viewHistory()">Istwa Tranzaksyon</button>
+    <button class="btn logout" onclick="logout()">Dekonekte</button>
+  </div>
+
+  <div id="history" class="card" style="display: none;">
+    <h2>Istwa Tranzaksyon</h2>
+    <div id="transactions"></div>
+    <button class="btn" onclick="backDashboard()">Retounen</button>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
